@@ -1,2 +1,3 @@
 # react-boolean-calculator
-Created with CodeSandbox
+
+A boolean calculator web app based on the React framework.
