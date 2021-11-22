@@ -22,21 +22,16 @@ export default function ResultManager() {
     }
 
     function evaluateAnd(literals: Boolean[]): Boolean {
-        console.log("Evaluating and with: ");
-        console.log(literals);
         if (literals.length === 0) {
             return "Undefined";
         }
         for (var i = 0; i < literals.length; i++) {
-            console.log("[AND] " + literals[i]);
             if (literals[i] === "Undefined") {
                 return "Undefined";
             } else if (literals[i] === "False") {
-                console.log("returning False");
                 return "False";
             }
         }
-        console.log("returning True");
         return "True";
     }
 
@@ -109,10 +104,6 @@ export default function ResultManager() {
     }
 
     function evaluate(): Boolean {
-        console.log("Operation: ");
-        console.log(operation);
-        console.log("Variables: ");
-        console.log(variables);
         return evaluateNode(operation[Object.keys(operation)[0]]);
     }
 

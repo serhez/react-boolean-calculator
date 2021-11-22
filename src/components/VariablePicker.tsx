@@ -13,7 +13,6 @@ export default function VariablePicker(props: {
     );
 
     function onChangeValue(event: React.ChangeEvent<HTMLSelectElement>) {
-        console.log("onChangeValue " + event.target.value);
         dispatch(
             setNodeValue({
                 id: props.id,
